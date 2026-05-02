@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit_Sharma | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+  
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+<canvas id="bg-canvas"></canvas>
+<div id="globe-container"></div>
+<div class="bg-grid"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<!-- Holographic Rings -->
+<div class="bg-rings">
+  <div class="ring ring-1"></div>
+  <div class="ring ring-2"></div>
+  <div class="ring ring-3"></div>
+</div>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold logo" href="#home">
+      Amit<span>Sharma</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Edu</a>
+        </li>
+
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Skills
+          </a>
+          <ul class="dropdown-menu custom-dropdown">
+            <li><a class="dropdown-item" href="#skills">Frontend</a></li>
+            <li><a class="dropdown-item" href="#skills">Java</a></li>
+            <li><a class="dropdown-item" href="#skills">DSA</a></li>
+            <li><a class="dropdown-item" href="#skills">SQL</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Resume
+          </a>
+          <ul class="dropdown-menu custom-dropdown">
+            <li><a class="dropdown-item" href="YOUR_LIVE_RESUME_URL_HERE" target="_blank">View Resume</a></li>
+            <li><a class="dropdown-item" href="YOUR_LIVE_RESUME_URL_HERE" download="Amit_Sharma_Resume.pdf">Download PDF</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#social">Socials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificate">Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hire">Contact</a>
+        </li>
+
+        <!-- CTA Button -->
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a href="#hire" class="btn hire-btn">Hire Me</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Hero Section Start -->
+<section class="hero-section d-flex align-items-center" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6 text-center text-lg-start hero-content">
+
+        <p class="hero-subtitle">WELCOME TO MY PORTFOLIO</p>
+
+        <h1 class="hero-title">
+          Hi, I'm <span>Amit_Sharma</span>
+        </h1>
+
+        <h2 class="typing-text">
+          I'm a <span id="typed-text"></span>
+        </h2>
+
+        <p class="hero-desc">
+          Passionate developer focused on creating modern websites,
+          solving coding problems, and building responsive digital experiences.
+        </p>
+
+        <div class="hero-btns mt-4">
+          <a href="#hire" class="btn hero-btn me-3">Hire Me</a>
+          <a href="#projects" class="btn hero-outline-btn">My Projects</a>
+        </div>
+
+      </div>
+
+      <!-- Right Slider -->
+      <div class="col-lg-6">
+
+        <div id="heroSlider" class="carousel slide hero-slider" data-bs-ride="carousel">
+
+          <div class="carousel-inner rounded-4">
+
+
+
+            <div class="carousel-item active">
+              <img src="https://i.ibb.co/hRbGgDHr/Chat-GPT-Image-Apr-30-2026-07-54-28-PM.png"
+                class="d-block w-100"  style="height: auto; object-fit:cover; " alt="img">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- About Section Start -->
+<section class="about-section py-5" id="about">
+  <div class="robotic-circle-container circle-right">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Image -->
+      <div class="col-lg-5">
+        <div class="about-img-box">
+          <img src="https://i.ibb.co/8n5YTfCz/pexels-thisisengineering-3861959.jpg"alt="About Image"class="img-fluid rounded-4 about-img">
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-7">
+
+        <p class="section-subtitle">ABOUT ME</p>
+
+        <h2 class="section-title">
+          Know More <span>About Me</span>
+        </h2>
+
+        <h4 class="about-typing">
+          I'm <span id="aboutTyped"></span>
+        </h4>
+
+        <p class="about-text">
+          I am a passionate and dedicated developer who loves creating modern,
+          responsive, and user-friendly websites. My focus is on clean design,
+          strong functionality, and smooth user experience.
+        </p>
+
+        <p class="about-text">
+          I also enjoy solving coding challenges, improving logic building,
+          and learning new technologies every day.
+        </p>
+
+        <!-- Info Cards -->
+        <div class="row g-3 mt-3">
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <h6>Name</h6>
+              <p>Amit Sharma</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <h6>Email</h6>
+              <p>amitsharma@email.com</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <h6>Experience</h6>
+              <p>1+ Years</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <h6>Location</h6>
+              <p>India</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a href="YOUR_LIVE_RESUME_URL_HERE" download="Amit_Sharma_Resume.pdf" class="btn about-btn me-3">Download CV</a>
+          <a href="#hire" class="btn about-outline-btn">Contact Me</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+<!-- Skills Section Start -->
+<section class="skills-section py-5" id="skills">
+  <div class="robotic-circle-container circle-left">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">MY SKILLS</p>
+      <h2 class="section-title">
+        Expertise & <span>Technologies</span>
+      </h2>
+      <h5 class="skill-typing">
+        I Work With <span id="skillTyped"></span>
+      </h5>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <!-- Left Image -->
+      <div class="col-lg-5">
+        <div class="skills-img-box">
+          <img 
+            src="https://i.ibb.co/C3nkkcn5/programmer-coding-software.avif" 
+            class="img-fluid rounded-4 skills-img"
+            alt="Skills Image">
+        </div>
+      </div>
+
+      <!-- Right Skills -->
+      <div class="col-lg-7">
+
+        <!-- Skill Item -->
+        <div class="skill-item mb-4">
+          <div class="d-flex justify-content-between">
+            <h6>HTML / CSS</h6>
+            <span>95%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar skill-bar" data-width="95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <div class="d-flex justify-content-between">
+            <h6>JavaScript</h6>
+            <span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar skill-bar" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <div class="d-flex justify-content-between">
+            <h6>Bootstrap</h6>
+            <span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar skill-bar" data-width="90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <div class="d-flex justify-content-between">
+            <h6>Java</h6>
+            <span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar skill-bar" data-width="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item mb-4">
+          <div class="d-flex justify-content-between">
+            <h6>DSA / Problem Solving</h6>
+            <span>88%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar skill-bar" data-width="88%"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Skill Cards -->
+    <div class="row g-4 mt-5 align-items-start">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card text-center" onclick="toggleSkillNotes(this)">
+          <i class="bi bi-code-slash"></i>
+          <h5>Frontend</h5>
+          <p>Modern UI with responsive layouts.</p>
+          <i class="bi bi-chevron-down skill-arrow"></i>
+          <div class="skill-notes">
+            <ul>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">HTML5 Semantic Elements</div>
+                <div class="sub-notes">Structure web pages with meaning using tags like header, article, and section for better SEO and accessibility.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">CSS3 Flexbox & Grid</div>
+                <div class="sub-notes">Create complex, responsive layouts easily without floats or positioning hacks.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Bootstrap 5 Framework</div>
+                <div class="sub-notes">Utilize pre-built components and a responsive grid system for rapid UI development.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Responsive Design</div>
+                <div class="sub-notes">Ensure the website looks perfect on all devices, from mobile phones to large desktops.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Media Queries</div>
+                <div class="sub-notes">Apply specific CSS styles based on device characteristics like screen width.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">CSS Animations & Transitions</div>
+                <div class="sub-notes">Add smooth visual effects to enhance user experience without relying on JavaScript.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card text-center" onclick="toggleSkillNotes(this)">
+          <i class="bi bi-filetype-js"></i>
+          <h5>JavaScript</h5>
+          <p>Dynamic interactions & animations.</p>
+          <i class="bi bi-chevron-down skill-arrow"></i>
+          <div class="skill-notes">
+            <ul>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">DOM Manipulation</div>
+                <div class="sub-notes">Dynamically change HTML content, structure, and styles in the browser.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">ES6+ Features</div>
+                <div class="sub-notes">Modern syntax including arrow functions, destructuring, let/const, and modules.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Event Handling</div>
+                <div class="sub-notes">Respond to user interactions like clicks, typing, and mouse movements.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Async/Await & Promises</div>
+                <div class="sub-notes">Manage asynchronous operations like fetching data from an API cleanly.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Local Storage & APIs</div>
+                <div class="sub-notes">Save data in the browser and interact with external web services.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Form Validation</div>
+                <div class="sub-notes">Ensure user input is correct and secure before submitting it to the server.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card text-center" onclick="toggleSkillNotes(this)">
+          <i class="bi bi-cup-hot"></i>
+          <h5>Java</h5>
+          <p>Strong OOP and backend logic.</p>
+          <i class="bi bi-chevron-down skill-arrow"></i>
+          <div class="skill-notes">
+            <ul>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Core Java & OOP Concepts</div>
+                <div class="sub-notes">Master classes, objects, inheritance, polymorphism, and encapsulation.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Collections Framework</div>
+                <div class="sub-notes">Efficiently store and manipulate groups of objects using Lists, Sets, and Maps.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Exception Handling</div>
+                <div class="sub-notes">Gracefully handle runtime errors to keep the application stable.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Multithreading Basics</div>
+                <div class="sub-notes">Run multiple processes concurrently to improve application performance.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">File I/O</div>
+                <div class="sub-notes">Read from and write data to files on the system.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">JDBC & Database Connectivity</div>
+                <div class="sub-notes">Connect Java applications to relational databases to execute SQL queries.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card text-center" onclick="toggleSkillNotes(this)">
+          <i class="bi bi-cpu"></i>
+          <h5>DSA</h5>
+          <p>Problem solving with optimized logic.</p>
+          <i class="bi bi-chevron-down skill-arrow"></i>
+          <div class="skill-notes">
+            <ul>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Arrays & Strings</div>
+                <div class="sub-notes">Foundational structures for storing contiguous data and text manipulation.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Linked Lists & Stacks</div>
+                <div class="sub-notes">Dynamic memory allocation and LIFO (Last-In-First-Out) operations.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Trees & Binary Search</div>
+                <div class="sub-notes">Hierarchical data structures for efficient searching and sorting algorithms.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Sorting & Searching</div>
+                <div class="sub-notes">Implementing algorithms like QuickSort, MergeSort, and Binary Search.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Recursion & Backtracking</div>
+                <div class="sub-notes">Solving complex problems by breaking them down into smaller sub-problems.</div>
+              </li>
+              <li onclick="toggleSubNotes(event, this)">
+                <div class="note-title">Dynamic Programming</div>
+                <div class="sub-notes">Optimizing recursive algorithms by storing and reusing intermediate results.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Skills Section End -->
+
+
+
+<!-- Projects Section Start -->
+<section class="projects-section py-5" id="projects">
+  <div class="robotic-circle-container circle-right">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">MY PROJECTS</p>
+      <h2 class="section-title">
+        Featured <span>Projects</span>
+      </h2>
+      <h5 class="project-typing">
+        I Build <span id="projectTyped"></span>
+      </h5>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://i.ibb.co/LDHDsR00/plnt-care-ai.jpg" style="object-fit:cover; cursor: pointer;" class="img-fluid project-img" alt="Project" onclick="openLightbox(this.src)">
+
+          <div class="project-content">
+            <h4>Portfolio Website</h4>
+            <p>Modern responsive personal portfolio using HTML, CSS, JS & Bootstrap.</p>
+
+            <div class="project-tags">
+            </div>
+
+            <div class="mt-3">
+              <a href="YOUR_PROJECT_1_LIVE_DEMO_LINK" target="_blank" class="btn project-btn me-2">Live Demo</a>
+              <a href="YOUR_PROJECT_1_GITHUB_REPO_LINK" target="_blank" class="btn project-outline-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://i.ibb.co/vxBMS1vj/edu-strote.jpg" style="object-fit:cover; cursor: pointer;" class="img-fluid project-img" alt="Project" onclick="openLightbox(this.src)">
+
+          <div class="project-content">
+            <h4>E-Commerce UI</h4>
+            <p>Dynamic shopping website design with clean UI and responsive pages.</p>
+
+            <div class="project-tags">
+            </div>
+
+            <div class="mt-3">
+              <a href="YOUR_PROJECT_2_LIVE_DEMO_LINK" target="_blank" class="btn project-btn me-2">Live Demo</a>
+              <a href="YOUR_PROJECT_2_GITHUB_REPO_LINK" target="_blank" class="btn project-outline-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000" style="object-fit:cover; cursor: pointer;" class="img-fluid project-img" alt="Project" onclick="openLightbox(this.src)">
+
+          <div class="project-content">
+            <h4>Edu Strot</h4>
+            <p>Marketplace platform for buying and selling study materials.</p>
+
+            <div class="project-tags">
+            </div>
+
+            <div class="mt-3">
+              <a href="YOUR_PROJECT_3_LIVE_DEMO_LINK" target="_blank" class="btn project-btn me-2">Live Demo</a>
+              <a href="YOUR_PROJECT_3_GITHUB_REPO_LINK" target="_blank" class="btn project-outline-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View More -->
+    <div class="text-center mt-5">
+      <a href="#" class="btn all-project-btn">View All Projects</a>
+    </div>
+
+  </div>
+</section>
+<!-- Projects Section End -->
+
+<!-- Education Section Start -->
+<section class="education-section py-5" id="education">
+  <div class="robotic-circle-container circle-right">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-subtitle">MY ACADEMICS</p>
+      <h2 class="section-title">
+        Educational <span>Journey</span>
+      </h2>
+      <h5 class="edu-typing">
+        I Studied in <span id="eduTyped"></span>
+      </h5>
+    </div>
+
+    <div class="education-timeline-wrapper">
+      <!-- Timeline Item 1 -->
+      <div class="edu-timeline-item show" onclick="openLightbox('https://images.unsplash.com/photo-1523240715634-941913917415?w=1200')">
+        <div class="edu-dot"></div>
+        <div class="edu-date">2023-To-2027</div>
+        <div class="edu-content">
+          <h4>Bachelor of Technology</h4>
+          <h5>Computer Science Engineering</h5>
+          <p>Percentage:70%</p>
+          <p>Focused on advanced software engineering, system design, and specialized technical growth.</p>
+          <div class="view-cert-badge"><i class="bi bi-eye-fill me-1"></i> View Degree</div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="edu-timeline-item show" onclick="openLightbox('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200')">
+        <div class="edu-dot"></div>
+        <div class="edu-date">2021-To-2023</div>
+        <div class="edu-content">
+          <h4>Secondary Education</h4>
+          <h5>High School 12th</h5>
+          <p>percentage:60%</p>
+          <p>science form Math strong foundations in core subjects and prepared for higher studies.</p>
+          <div class="view-cert-badge"><i class="bi bi-eye-fill me-1"></i> View Certificate</div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="edu-timeline-item show" onclick="openLightbox('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200')">
+        <div class="edu-dot"></div>
+        <div class="edu-date">2020-To-2021</div>
+        <div class="edu-content">
+          <h4>Primary Education</h4>
+          <h5>Fundamental Schooling</h5>
+           <p>percentage:65%</p>
+          <p>Early academic years focused on building essential skills and a curiosity for learning.</p>
+          <div class="view-cert-badge"><i class="bi bi-eye-fill me-1"></i> View Document</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Education Section End -->
+
+
+
+<!-- Certificate Section Start -->
+<section class="certificate-section py-5" id="certificate">
+  <div class="robotic-circle-container circle-left">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">MY CERTIFICATES</p>
+      <h2 class="section-title">
+        Verified <span>Achievements</span>
+      </h2>
+      <h5 class="certificate-typing">
+        I Earned <span id="certificateTyped"></span>
+      </h5>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-5">
+        <div class="certificate-info">
+
+          <h3>Professional Growth 📜</h3>
+
+          <p>
+            These certificates represent dedication, consistency,
+            technical learning, and continuous self improvement.
+          </p>
+
+          <ul class="certificate-list">
+            <li>✔ Web Development</li>
+            <li>✔ Java Programming</li>
+            <li>✔ Data Structures</li>
+            <li>✔ UI / UX Design</li>
+          </ul>
+
+          <a href="javascript:void(0)" class="btn certificate-btn mt-3" onclick="openAllCertificates()">
+            View All
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right Slider -->
+      <div class="col-lg-7">
+
+        <div id="certificateSlider"
+          class="carousel slide certificate-slider"
+          data-bs-ride="carousel">
+
+          <div class="carousel-inner rounded-4">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img
+                src="https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg"
+                class="d-block w-100"
+                alt="certificate"
+                style="cursor: pointer;"
+                onclick="openLightbox(this.src)">
+              <div class="certificate-overlay">
+                <h4>Web Development Certificate</h4>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/N2YpZ1z7/nasscom.jpg" 
+                class="d-block w-100"
+                alt="certificate"
+                style="cursor: pointer;"
+                onclick="openLightbox(this.src)">
+              <div class="certificate-overlay">
+                <h4>Project: Plant care Ai</h4>
+              </div>
+            </div>
+
+               <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg"
+                class="d-block w-100"
+                alt="certificate"
+                style="cursor: pointer;"
+                onclick="openLightbox(this.src)">
+              <div class="certificate-overlay">
+                <h4>Java Programming Certificate</h4>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/5W87Qdbv/gfg.jpg" 
+                class="d-block w-100"
+                alt="certificate"
+                style="cursor: pointer;"
+                onclick="openLightbox(this.src)">
+              <div class="certificate-overlay">
+                <h4>DSA Mastery Certificate</h4>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#certificateSlider"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#certificateSlider"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Certificate Section End -->
+
+
+
+<!-- Resume Section Start -->
+<section class="resume-section py-5" id="resume">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">MY RESUME</p>
+      <h2 class="section-title"><span>Resume</span>
+      </h2>
+      <h5 class="resume-typing">
+        My Journey As <span id="resumeTyped"></span>
+      </h5>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <!-- Professional Buttons Only -->
+        <div class="text-center mt-2">
+          <a href="javascript:void(0)" onclick="openLightbox('YOUR_LIVE_RESUME_URL_HERE')" class="btn resume-primary-btn me-3">
+            <i class="bi bi-eye-fill me-2"></i> View Resume
+          </a>
+          <a href="YOUR_LIVE_RESUME_URL_HERE" download="Amit_Sharma_Resume.pdf" class="btn resume-secondary-btn">
+            <i class="bi bi-download me-2"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Hire Me Section Start -->
+<section class="hire-section py-4" id="hire">
+  <div class="robotic-circle-container circle-left">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-4">
+      <p class="section-subtitle">HIRE ME</p>
+      <h2 class="section-title">
+        Let's <span>Work Together</span>
+      </h2>
+      <h5 class="hire-typing">
+        I Am Available For <span id="hireTyped"></span>
+      </h5>
+    </div>
+
+    <div class="row g-5 align-items-center">
+
+      <!-- Left Info -->
+      <div class="col-lg-5">
+
+        <div class="hire-info-box">
+
+          <h3>Let's Build Something Amazing</h3>
+
+          <p>
+            Looking for a passionate developer to create your website,
+            portfolio, landing page or modern UI design? Let's connect.
+          </p>
+
+          <div class="hire-contact-item" id="contact-email-target">
+            <i class="bi bi-envelope-fill"></i>
+            <span>amitsharma@email.com</span>
+          </div>
+
+          <div class="hire-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+91 9876543210</span>
+          </div>
+
+          <div class="hire-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>India</span>
+          </div>
+
+          <div class="hire-social mt-4">
+            <a href="https://github.com" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Form -->
+      <div class="col-lg-7 position-relative">
+        
+        <div class="hire-form-box">
+
+          <form>
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Phone Number">
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+
+              <div class="col-12">
+                <textarea class="form-control" rows="6" placeholder="Write Your Project Details..."></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn send-btn">
+                  Send Message
+                </button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Social Media Section Start -->
+<section class="social-section py-4" id="social">
+  <div class="robotic-circle-container circle-right">
+    <div class="robotic-circle-item"></div>
+  </div>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">SOCIAL MEDIA</p>
+      <h2 class="section-title">
+        Let's <span>Connect</span>
+      </h2>
+      <h5 class="social-typing">
+        Follow Me On <span id="socialTyped"></span>
+      </h5>
+    </div>
+
+    <!-- Social Cards -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Instagram -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://instagram.com" target="_blank" class="social-card instagram">
+          <i class="bi bi-instagram"></i>
+          <h4>Instagram</h4>
+          <p>@yourusername</p>
+        </a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://facebook.com" target="_blank" class="social-card facebook">
+          <i class="bi bi-facebook"></i>
+          <h4>Facebook</h4>
+          <p>facebook.com/yourprofile</p>
+        </a>
+      </div>
+
+      <!-- Twitter -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://twitter.com" target="_blank" class="social-card twitter">
+          <i class="bi bi-twitter-x"></i>
+          <h4>Twitter / X</h4>
+          <p>@yourhandle</p>
+        </a>
+      </div>
+
+      <!-- GitHub -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://github.com" target="_blank" class="social-card github">
+          <i class="bi bi-github"></i>
+          <h4>GitHub</h4>
+          <p>github.com/yourusername</p>
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://linkedin.com" target="_blank" class="social-card linkedin">
+          <i class="bi bi-linkedin"></i>
+          <h4>LinkedIn</h4>
+          <p>linkedin.com/in/yourprofile</p>
+        </a>
+      </div>
+
+      <!-- LeetCode -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://leetcode.com" target="_blank" class="social-card leetcode">
+          <i class="bi bi-code-square"></i>
+          <h4>LeetCode</h4>
+          <p>leetcode.com/yourusername</p>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Social Media Section End -->
+
+
+
+<!-- Earth Section Start -->
+<section class="earth-section py-5" id="earth">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <p class="section-subtitle">GLOBAL VISION</p>
+      <h2 class="section-title">
+        Connected <span>World</span>
+      </h2>
+      <h5 class="earth-typing">
+        We Build For <span id="earthTyped"></span>
+      </h5>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="earth-content">
+          <h3>Modern Digital Presence 🌍</h3>
+          <p>
+            I create websites and digital solutions that can reach users
+            worldwide. Responsive design, modern UI, and smart performance.
+          </p>
+
+          <div class="video-box mt-4">
+            <div class="video-container">
+              <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+              <iframe src="https://drive.google.com/file/d/1FkhJ_Jfqas2TO7W722UMxHYWkz-SrV2b/view?usp=drivesdk" title="Live Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <a href="#" class="btn earth-btn mt-3">Let's Connect</a>
+        </div>
+      </div>
+
+      <!-- Right Earth -->
+      <div class="col-lg-6 text-center">
+        <div class="earth-wrapper">
+          <div class="orbit-ring"></div>
+          <div class="earth-glow"></div>
+          <div class="earth"></div>
+          <div class="platform"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Earth Section End -->
+
+
+<!-- Lightbox Modal -->
+<div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightboxImg">
+  <div id="lightboxCaption"></div>
+</div>
+
+<!-- All Certificates Modal -->
+<div id="allCertificatesModal" class="all-certs-modal">
+  <div class="all-certs-container">
+    <div class="all-certs-header">
+      <h2 class="section-title">All <span>Certificates</span></h2>
+      <span class="close-all-certs" onclick="closeAllCertificates()">&times;</span>
+    </div>
+    <div class="all-certs-grid">
+      <!-- Cert 1 -->
+      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg')">
+        <img src="https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg" alt="cert">
+        <div class="cert-grid-overlay">
+          <span>Web Development</span>
+        </div>
+      </div>
+      <!-- Cert 2 -->
+      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/N2YpZ1z7/nasscom.jpg')">
+        <img src="https://i.ibb.co/N2YpZ1z7/nasscom.jpg" alt="cert">
+        <div class="cert-grid-overlay">
+          <span>Plant Care AI</span>
+        </div>
+      </div>
+      <!-- Cert 3 -->
+      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg')">
+        <img src="https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg" alt="cert">
+        <div class="cert-grid-overlay">
+          <span>Java Programming</span>
+        </div>
+      </div>
+      <!-- Cert 4 -->
+      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/5W87Qdbv/gfg.jpg')">
+        <img src="https://i.ibb.co/5W87Qdbv/gfg.jpg" alt="cert">
+        <div class="cert-grid-overlay">
+          <span>DSA Mastery</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
