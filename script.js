@@ -9,6 +9,17 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Close mobile navbar on link click
+document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle), .navbar-nav .dropdown-item').forEach(link => {
+  link.addEventListener('click', () => {
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse.classList.contains('show')) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+      bsCollapse.hide();
+    }
+  });
+});
+
 // Custom Cursor Logic
 const cursor = document.getElementById("cursor");
 
