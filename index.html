@@ -659,6 +659,7 @@
   <div class="robotic-circle-container circle-left">
     <div class="robotic-circle-item"></div>
   </div>
+
   <div class="container">
 
     <!-- Heading -->
@@ -672,117 +673,83 @@
       </h5>
     </div>
 
-    <div class="row align-items-center g-5">
+    <!-- Credential Cards Grid -->
+    <div class="cred-grid">
 
-      <!-- Left Content -->
-      <div class="col-lg-5">
-        <div class="certificate-info">
-
-          <h3>Professional Growth 📜</h3>
-
-          <p>
-            These certificates represent dedication, consistency,
-            technical learning, and continuous self improvement.
-          </p>
-
-          <ul class="certificate-list">
-            <li>✔ Web Development</li>
-            <li>✔ Java Programming</li>
-            <li>✔ Data Structures</li>
-            <li>✔ UI / UX Design</li>
-          </ul>
-
-          <a href="javascript:void(0)" class="btn certificate-btn mt-3" onclick="openAllCertificates()">
-            View All
-          </a>
-
+      <!-- Card 1 -->
+      <div class="cred-card">
+        <div class="cred-top-bar"></div>
+        <div class="cred-header">
+          <span class="cred-badge"><span class="cred-dot"></span> CERTIFIED</span>
+          <span class="cred-year">2024</span>
+        </div>
+        <div class="cred-body">
+          <h4 class="cred-title">Web Development</h4>
+          <p class="cred-issuer">Issued by <strong>AICTCE</strong></p>
+        </div>
+        <div class="cred-footer">
+          <button class="cred-btn" onclick="openLightbox('https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg')">
+            View Credential <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </button>
         </div>
       </div>
 
-      <!-- Right Slider -->
-      <div class="col-lg-7">
-
-        <div id="certificateSlider"
-          class="carousel slide certificate-slider"
-          data-bs-ride="carousel">
-
-          <div class="carousel-inner rounded-4">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <img
-                src="https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg"
-                class="d-block w-100"
-                alt="certificate"
-                style="cursor: pointer;"
-                onclick="openLightbox(this.src)">
-              <div class="certificate-overlay">
-                <h4>Web Development Certificate</h4>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <img
-                src="https://i.ibb.co/N2YpZ1z7/nasscom.jpg" 
-                class="d-block w-100"
-                alt="certificate"
-                style="cursor: pointer;"
-                onclick="openLightbox(this.src)">
-              <div class="certificate-overlay">
-                <h4>Project: Plant care Ai</h4>
-              </div>
-            </div>
-
-               <!-- Slide 3 -->
-            <div class="carousel-item">
-              <img
-                src="https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg"
-                class="d-block w-100"
-                alt="certificate"
-                style="cursor: pointer;"
-                onclick="openLightbox(this.src)">
-              <div class="certificate-overlay">
-                <h4>Java Programming Certificate</h4>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="carousel-item">
-              <img
-                src="https://i.ibb.co/5W87Qdbv/gfg.jpg" 
-                class="d-block w-100"
-                alt="certificate"
-                style="cursor: pointer;"
-                onclick="openLightbox(this.src)">
-              <div class="certificate-overlay">
-                <h4>DSA Mastery Certificate</h4>
-              </div>
-            </div> 
-          </div>
-
-          <!-- Controls -->
-          <button class="carousel-control-prev"
-            type="button"
-            data-bs-target="#certificateSlider"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-
-          <button class="carousel-control-next"
-            type="button"
-            data-bs-target="#certificateSlider"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon"></span>
-          </button>
-
+      <!-- Card 2 -->
+      <div class="cred-card">
+        <div class="cred-top-bar"></div>
+        <div class="cred-header">
+          <span class="cred-badge"><span class="cred-dot"></span> CERTIFIED</span>
+          <span class="cred-year">2025</span>
         </div>
+        <div class="cred-body">
+          <h4 class="cred-title">Project: Plant Care AI</h4>
+          <p class="cred-issuer">Issued by <strong>NASSCOM</strong></p>
+        </div>
+        <div class="cred-footer">
+          <button class="cred-btn" onclick="openLightbox('https://i.ibb.co/N2YpZ1z7/nasscom.jpg')">
+            View Credential <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </button>
+        </div>
+      </div>
 
+      <!-- Card 3 -->
+      <div class="cred-card">
+        <div class="cred-top-bar"></div>
+        <div class="cred-header">
+          <span class="cred-badge"><span class="cred-dot"></span> CERTIFIED</span>
+          <span class="cred-year">2024</span>
+        </div>
+        <div class="cred-body">
+          <h4 class="cred-title">Java Programming</h4>
+          <p class="cred-issuer">Issued by <strong>Mainete</strong></p>
+        </div>
+        <div class="cred-footer">
+          <button class="cred-btn" onclick="openLightbox('https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg')">
+            View Credential <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="cred-card">
+        <div class="cred-top-bar"></div>
+        <div class="cred-header">
+          <span class="cred-badge"><span class="cred-dot"></span> CERTIFIED</span>
+          <span class="cred-year">2025</span>
+        </div>
+        <div class="cred-body">
+          <h4 class="cred-title">DSA Mastery</h4>
+          <p class="cred-issuer">Issued by <strong>GeeksForGeeks</strong></p>
+        </div>
+        <div class="cred-footer">
+          <button class="cred-btn" onclick="openLightbox('https://i.ibb.co/5W87Qdbv/gfg.jpg')">
+            View Credential <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </button>
+        </div>
       </div>
 
     </div>
+    <!-- /Credential Cards -->
 
   </div>
 </section>
@@ -1008,60 +975,6 @@
 
 
 
-<!-- Earth Section Start -->
-<section class="earth-section py-5" id="earth">
-  <div class="container">
-
-    <!-- Heading -->
-    <div class="text-center mb-5">
-      <p class="section-subtitle">GLOBAL VISION</p>
-      <h2 class="section-title">
-        Connected <span>World</span>
-      </h2>
-      <h5 class="earth-typing">
-        We Build For <span id="earthTyped"></span>
-      </h5>
-    </div>
-
-    <div class="row align-items-center g-5">
-
-      <!-- Left Content -->
-      <div class="col-lg-6">
-        <div class="earth-content">
-          <h3>Modern Digital Presence 🌍</h3>
-          <p>
-            I create websites and digital solutions that can reach users
-            worldwide. Responsive design, modern UI, and smart performance.
-          </p>
-
-          <div class="video-box mt-4">
-            <div class="video-container">
-              <!-- Replace VIDEO_ID with your actual YouTube video ID -->
-              <iframe src="https://drive.google.com/file/d/1FkhJ_Jfqas2TO7W722UMxHYWkz-SrV2b/view?usp=drivesdk" title="Live Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <a href="#" class="btn earth-btn mt-3">Let's Connect</a>
-        </div>
-      </div>
-
-      <!-- Right Earth -->
-      <div class="col-lg-6 text-center">
-        <div class="earth-wrapper">
-          <div class="orbit-ring"></div>
-          <div class="earth-glow"></div>
-          <div class="earth"></div>
-          <div class="platform"></div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- Earth Section End -->
-
-
 <!-- Lightbox Modal -->
 <div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
   <span class="lightbox-close">&times;</span>
@@ -1069,46 +982,68 @@
   <div id="lightboxCaption"></div>
 </div>
 
-<!-- All Certificates Modal -->
-<div id="allCertificatesModal" class="all-certs-modal">
-  <div class="all-certs-container">
-    <div class="all-certs-header">
-      <h2 class="section-title">All <span>Certificates</span></h2>
-      <span class="close-all-certs" onclick="closeAllCertificates()">&times;</span>
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">&lt;<span>Amit</span>&gt;</div>
+          <p class="footer-desc">Full Stack Developer creating powerful digital products with modern technologies.</p>
+          <div class="footer-location">
+            <i class="bi bi-geo-alt"></i> BHOPAL, INDIA
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col footer-links-col">
+          <h6 class="footer-heading">QUICK LINKS</h6>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Tech Philosophy -->
+        <div class="footer-col footer-philosophy-col">
+          <p class="footer-philosophy-label"><span class="footer-phil-dot"></span> TECH PHILOSOPHY</p>
+          <h3 class="footer-philosophy-title">Building clean, scalable systems</h3>
+          <p class="footer-philosophy-sub">Where performance meets thoughtful design.</p>
+          <div class="footer-tags">
+            <span>Clean Code</span>
+            <span>Scalable UI</span>
+            <span>Performance</span>
+            <span>DX</span>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="all-certs-grid">
-      <!-- Cert 1 -->
-      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg')">
-        <img src="https://i.ibb.co/v4fKMT7f/Aictce-java-com.jpg" alt="cert">
-        <div class="cert-grid-overlay">
-          <span>Web Development</span>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <div class="footer-socials">
+          <a href="https://github.com/kumaramitbth2005-spec/Portfolio" target="_blank" title="GitHub" class="footer-social-btn"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/amit-kumar-814263335" target="_blank" title="LinkedIn" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram" class="footer-social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="https://leetcode.com/AmitKumar_83" target="_blank" title="LeetCode" class="footer-social-btn"><i class="bi bi-code-square"></i></a>
+          <a href="#hire" title="Email" class="footer-social-btn"><i class="bi bi-envelope-fill"></i></a>
         </div>
-      </div>
-      <!-- Cert 2 -->
-      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/N2YpZ1z7/nasscom.jpg')">
-        <img src="https://i.ibb.co/N2YpZ1z7/nasscom.jpg" alt="cert">
-        <div class="cert-grid-overlay">
-          <span>Plant Care AI</span>
-        </div>
-      </div>
-      <!-- Cert 3 -->
-      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg')">
-        <img src="https://i.ibb.co/rR25TLQ3/Mainete-problem-solving.jpg" alt="cert">
-        <div class="cert-grid-overlay">
-          <span>Java Programming</span>
-        </div>
-      </div>
-      <!-- Cert 4 -->
-      <div class="cert-grid-item" onclick="openLightbox('https://i.ibb.co/5W87Qdbv/gfg.jpg')">
-        <img src="https://i.ibb.co/5W87Qdbv/gfg.jpg" alt="cert">
-        <div class="cert-grid-overlay">
-          <span>DSA Mastery</span>
+        <div class="footer-copy">
+          <p class="footer-copy-title">&copy; 2026 Amit KUMAR Sharma.</p>
+          <p class="footer-copy-sub">ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

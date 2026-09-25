@@ -415,80 +415,8 @@ initParticles();
 animateParticles();
 
 
-// --- Three.js 3D Globe Animation ---
-function initGlobe() {
-  const container = document.getElementById("globe-container");
-  if (!container) return;
 
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
 
-  const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(window.devicePixelRatio);
-  container.appendChild(renderer.domElement);
-
-  // 🌍 Globe Geometry
-  const geometry = new THREE.SphereGeometry(2.5, 64, 64);
-
-  // 🌐 Texture (using a high-tech dotted grid texture for better look)
-  const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load(
-    "https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg"
-  );
-
-  const material = new THREE.MeshBasicMaterial({
-    map: texture,
-    transparent: true,
-    opacity: 0.8,
-    color: 0x38bdf8, // Cyan tint to match theme
-    wireframe: true // Makes it look more robotic/digital
-  });
-
-  const globe = new THREE.Mesh(geometry, material);
-  scene.add(globe);
-
-  // ✨ Orbit Ring
-  const ringGeometry = new THREE.TorusGeometry(3.5, 0.03, 16, 100);
-  const ringMaterial = new THREE.MeshBasicMaterial({
-    color: 0x38bdf8,
-    transparent: true,
-    opacity: 0.5
-  });
-  const ring = new THREE.Mesh(ringGeometry, ringMaterial);
-  ring.rotation.x = Math.PI / 2;
-  scene.add(ring);
-
-  // 📷 Camera position
-  camera.position.z = 6;
-
-  // 🔄 Animation loop (CLOCKWISE)
-  function animateGlobe() {
-    requestAnimationFrame(animateGlobe);
-
-    globe.rotation.y -= 0.002; // Clockwise rotation
-    ring.rotation.z -= 0.003;
-
-    renderer.render(scene, camera);
-  }
-
-  animateGlobe();
-
-  // 📱 Responsive
-  window.addEventListener("resize", () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-  });
-}
-
-// Initialize the globe after a small delay to ensure container is ready
-setTimeout(initGlobe, 100);
 
 // Social Typing Animation
 const socialWords = [
@@ -532,45 +460,7 @@ function socialTypeEffect() {
 
 socialTypeEffect();
 
-// Earth Typing Animation
-const earthWords = [
-  "Clients Worldwide",
-  "Future Projects",
-  "Global Brands",
-  "Digital Growth"
-];
 
-let ew = 0;
-let ex = 0;
-let earthCurrent = "";
-let earthDelete = false;
-
-function earthTypeEffect() {
-  earthCurrent = earthWords[ew];
-  const el = document.getElementById("earthTyped");
-  if (!el) return;
-
-  if (earthDelete) {
-    el.textContent = earthCurrent.substring(0, ex--);
-  } else {
-    el.textContent = earthCurrent.substring(0, ex++);
-  }
-
-  if (!earthDelete && ex === earthCurrent.length + 1) {
-    earthDelete = true;
-    setTimeout(earthTypeEffect, 1000);
-    return;
-  }
-
-  if (earthDelete && ex === 0) {
-    earthDelete = false;
-    ew = (ew + 1) % earthWords.length;
-  }
-
-  setTimeout(earthTypeEffect, earthDelete ? 70 : 120);
-}
-
-earthTypeEffect();
 
 // Education Typing Animation
 const eduWords = [
@@ -700,26 +590,4 @@ function certificateTypeEffect(){
 
 certificateTypeEffect();
 
-// Certificate Modal Functions
-function openAllCertificates() {
-  const modal = document.getElementById("allCertificatesModal");
-  if (modal) {
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden"; // Disable scrolling
-  }
-}
-
-function closeAllCertificates() {
-  const modal = document.getElementById("allCertificatesModal");
-  if (modal) {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto"; // Re-enable scrolling
-  }
-}
-
-// Close All Certs on 'Esc' key
-window.addEventListener('keydown', (e) => {
-  if (e.key === "Escape") {
-    closeAllCertificates();
-  }
-});
+// Certificate Horizontal Scroll (removed - now using grid)
